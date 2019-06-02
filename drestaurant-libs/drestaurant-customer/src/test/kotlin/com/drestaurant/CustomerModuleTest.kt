@@ -14,7 +14,7 @@ internal class CustomerModuleTest {
     /**
      * Testing the 'package' visibility/scope of 'internal' classes within the module.
      *
-     * If you would have more packages/bounded contexts in this module, e.g: `com.rdestaurant.foo.domain` with classes accessing  `com.drestaurant.customer.domain` test will fail.
+     * If you would have more packages/bounded contexts in this module, e.g: `com.drestaurant.foo.domain` with classes accessing  `com.drestaurant.customer.domain` test will fail.
      * This will force your bounded contexts/packages to be more decoupled within the same module, and should be easy to extract them in separate modules in the future (if needed).
      *
      * In Java programming language you should only check the 'modifier'. Kotlin does not have 'package' scope
